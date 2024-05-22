@@ -28,7 +28,7 @@ Ici, l'on veut faire une requête à `http://example.com/` mais si l'on voulait 
 
 Finalement, `HTTP/1.1` est une constante : c'est la version utilisée du protocole HTTP, ici `1.1`.
 
-### Les champs dans les headers
+### Les champs
 
 Après cette première ligne, nous avons plusieurs champs qui sont formatés ainsi, `Key: value`.
 
@@ -68,7 +68,7 @@ Vous pourrez remarquer que j'ai ajouté le champ `Content-Type` pour spécifier 
 
 Vous pourrez retrouver d'autres MIME dans la documentation de la MDN, [https://developer.mozilla.org/fr/docs/Web/HTTP/Basics\_of\_HTTP/MIME\_types](https://developer.mozilla.org/fr/docs/Web/HTTP/Basics\_of\_HTTP/MIME\_types).
 
-## Envoi de la requête
+## Envoyer la requête
 
 Nous allons revenir sur notre requête GET (vers [http://example.com](http://example.com)) et allons l'envoyer à la machine "serveur" via notre socket. Nous utiliserons une version plus simplifiée.
 
