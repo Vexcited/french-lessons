@@ -8,13 +8,15 @@ description: Comment voir les messages HTTP en utilisant cURL ?
 
 cURL est une commande qui permet de faire des requêtes HTTP depuis son terminal.
 
+Il est installé par défaut sur les dernières versions de Windows 10 et est inclus dans Windows 11 et macOS au préalable.
+
 ## Exemple sans paramètre
 
 ```
 curl http://example.com/
 ```
 
-Cette simple commande vous donnera directement le contenu de la réponse HTTP renvoyé après une requête GET à http://example.com
+Cette simple commande vous donnera directement le contenu de la réponse HTTP renvoyé après une requête GET à `http://example.com`
 
 ## Voir la requête et les en-têtes
 

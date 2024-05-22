@@ -39,19 +39,19 @@ Accept-Language: fr, en
 Autre-Parametre: valeur-possible
 ```
 
-Le champ "Host" est **obligatoire** car il permet au serveur de savoir à quelle adresse (et port) la requête a été faite. Cela est utile dans des cas de configurations assez complexes.
+Le champ `Host` est **obligatoire** car il permet au serveur de savoir à quelle adresse (et port si utilisé explicitement : `example.com:8080`) la requête a été faite. Cela est utile dans des cas de configurations assez complexes.
 
 Tout les autres champs sont optionnels, on peut même ajouter nos propre champs, cependant quelques champs peuvent avoir un impact sur le contenu.
 
-Par exemple, le champ "User-Agent" contient les détails de l'application faisant la requête HTTP.\
-Ici, nous avons décidé d'écrire de notre User-Agent : "http-1o1" à la version 1.0.0 mais un vrai User-Agent tel que celui de Chrome, par exemple est bien plus long : `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36`. Ce champ permet au serveur de pouvoir potentiellement adapter le contenu en fonction du navigateur.
+Par exemple, le champ `User-Agent` contient des informations sur la version de l'application faisant la requête HTTP. Ici, nous avons décidé d'utiliser le `User-Agent` suivant : `http-1o1` et on a précisé qu'on était à la version `1.0.0`. Cependant, un vrai `User-Agent` tel que celui de Chrome, par exemple, est bien plus long : `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36`.\
+Ce champ permet au serveur de pouvoir potentiellement adapter le contenu en fonction du navigateur.
 
-Un autre exemple : le champ "Accept-Language" permet de dire au serveur quel langue notre navigateur préfère (par ordre de préférence). Ainsi le serveur peut potentiellement adapter le contenu en fonction des langues données.
+Un autre exemple : le champ `Accept-Language` permet de dire au serveur quel langue notre navigateur préfère (par ordre de préférence). Ainsi le serveur peut potentiellement adapter le contenu en fonction des langues données.
 
 ## Le contenu
 
 Dans cet exemple, le contenu **DOIT** être vide.\
-Nous faisons une requête `GET` et lorsque l'on utilise cette méthode, le contenu **DOIT** être vide.
+Nous faisons une requête `GET` et lorsque l'on utilise cette méthode, le contenu **DOIT** être vide : on ne peut pas envoyer de données avec un `GET` car **cette méthode est faite pour la lecture seulement**.
 
 Si l'on veut envoyer des données au serveur lors de notre requête HTTP, on peut utiliser les autres méthodes tel que `POST`, par exemple :
 
@@ -70,7 +70,7 @@ Vous pourrez retrouver d'autres MIME dans la documentation de la MDN, [https://d
 
 ## Envoyer la requête
 
-Nous allons revenir sur notre requête GET (vers [http://example.com](http://example.com)) et allons l'envoyer à la machine "serveur" via notre socket. Nous utiliserons une version plus simplifiée.
+Nous allons revenir sur notre requête `GET` (vers [http://example.com](http://example.com)) et allons l'envoyer à la machine "serveur" via notre socket. Nous utiliserons une version plus simplifiée de la requête.
 
 {% code title="index.mjs" fullWidth="false" %}
 ```javascript
