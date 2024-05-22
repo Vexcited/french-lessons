@@ -58,7 +58,7 @@ socket.once("connect", () => {
 
 On peut exécuter ce script en utilisant `node ./index.mjs` et l'on obtient ce résultat sur la console :
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Execution du script ci-dessus. La connexion a été effectuée.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Execution du script ci-dessus. La connexion a été effectuée.</p></figcaption></figure>
 
 On remarque que notre programme n'est pas _quitté_ instantanément.
 

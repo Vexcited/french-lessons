@@ -101,6 +101,6 @@ socket.once("connect", () => {
 ```
 {% endcode %}
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>On peut voir la requête que l'on a envoyé.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>On peut voir la requête que l'on a envoyé.</p></figcaption></figure>
 
 On a envoyé notre requête, maintenant il faut avoir la réponse !

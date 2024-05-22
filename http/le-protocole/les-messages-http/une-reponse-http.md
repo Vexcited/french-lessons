@@ -73,7 +73,7 @@ socket.once("close", () => {
 ```
 {% endcode %}
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>On peut voir un bout de la réponse que l'on reçoit dans notre console.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>On peut voir un bout de la réponse que l'on reçoit dans notre console.</p></figcaption></figure>
 
 On reçoit bien la page HTML de `http://example.com/`
 
