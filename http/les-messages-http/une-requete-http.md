@@ -90,7 +90,8 @@ socket.once("connect", () => {
     + "\r\n";
 
   // On affiche la requête que l'on envoie.
-  console.log(">>", request);
+  console.log("---- REQUEST ----");
+  console.log(request);
 
   // On écrit la requête dans le socket.
   // La machine "serveur" va recevoir notre requête.
@@ -100,6 +101,6 @@ socket.once("connect", () => {
 ```
 {% endcode %}
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>On peut voir la requête que l'on a envoyé.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>On peut voir la requête que l'on a envoyé.</p></figcaption></figure>
 
 On a envoyé notre requête, maintenant il faut avoir la réponse !
