@@ -72,7 +72,7 @@ Vous pourrez retrouver d'autres MIME dans la documentation de la MDN, [https://d
 
 Nous allons revenir sur notre requête GET (vers [http://example.com](http://example.com)) et allons l'envoyer à la machine "serveur" via notre socket. Nous utiliserons une version plus simplifiée.
 
-{% code title="index.mjs" fullWidth="true" %}
+{% code title="index.mjs" fullWidth="false" %}
 ```javascript
 // Lorsqu'on est connecté à la machine "serveur"
 socket.once("connect", () => {

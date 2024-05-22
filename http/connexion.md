@@ -35,7 +35,7 @@ Le DNS se chargera de faire la résolution de l'adresse IP en fonction du nom de
 
 Bien, connectons nous à cette machine "serveur" maintenant !
 
-{% code title="index.mjs" fullWidth="true" %}
+{% code title="index.mjs" fullWidth="false" %}
 ```javascript
 // A noter qu'on utilise "node:net" car on se connecte
 // sur l'HTTP et non l'HTTPS, sinon il faudrait utiliser "node:tls".
