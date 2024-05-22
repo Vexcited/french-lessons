@@ -13,7 +13,3 @@
 
 * [Chrome DevTools](au-quotidien/chrome-devtools.md)
 * [cURL](au-quotidien/curl.md)
-
-***
-
-* [Sources](sources.md)
